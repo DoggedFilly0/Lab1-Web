@@ -1,0 +1,65 @@
+html {
+    background-color: rgb(121, 117, 117);
+}
+.grid {
+    display: grid;
+    grid-template-columns: 0.4fr 1.6fr;
+    grid-template-rows: 10% 30% 30% 30%; 
+    grid-auto-columns: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "name-title number-email"
+      "technical-skills education"
+      "soft-skills experience"
+      "languages projects";
+  }
+  
+  .name-title { 
+      grid-area: name-title;
+    }
+  
+  .technical-skills { 
+      grid-area: technical-skills; 
+    }
+  
+  .soft-skills { 
+      grid-area: soft-skills; 
+    }
+  
+  .languages { 
+      grid-area: languages; 
+    }
+  
+  .education { 
+    border-top: solid;
+      grid-area: education; 
+    }
+  
+  .experience { 
+    border-top: solid;
+      grid-area: experience; 
+    }
+  
+  .projects { 
+    border-top: solid;
+      grid-area: projects; 
+    }
+  
+  .number-email { 
+    
+      display: flex;
+      grid-area: number-email; 
+      font-style: italic;
+      flex-flow:column;
+      justify-content: flex-end;
+    }
+  
+h3 {
+  color:darkorange;
+  font-weight: bold;
+}
+
+p {
+  color: whitesmoke
+}
